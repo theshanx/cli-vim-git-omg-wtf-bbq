@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 QUITTERS
 ________
-- :w		write file (save)
-=======
-#QUITTERS
-* :w		write file (save)
->>>>>>> b1745f69817e947a839bbe665976a1d1367f212b
 - :w text.txt	write file named text.txt
 - :wq		write and quite
 - :q!		quit without writing
 
-<<<<<<< HEAD
 MODES
 _____
 - i		enter Insert mode from Command mode
@@ -143,5 +136,4 @@ ____________
 -`A` goes into Insert AT THE END OF THE LINE! (new favorite, since it replaces both `$` and `i` for me)
 -`o` ADDS A LINE BELOW and goes into Insert
 
->>>>>>> b1745f69817e947a839bbe665976a1d1367f212b
 
