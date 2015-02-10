@@ -1,5 +1,5 @@
 #QUITTERS
--:w		write file (save)
+*:w		write file (save)
 -:w text.txt	write file named text.txt
 -:wq		write and quite
 -:q!		quit without writing
