@@ -1,0 +1,28 @@
+OBJECTIVES:
+check on: internet, shell (windows users), any people considerations (can everyone see? hear? am i talking too quickly?)
+why should I learn about this stuff?
+very basics of CLI
+what is CLI
+moving, manipulating, reading commands
+flags, help
+q/a/cats
+very basics of vim
+a very brief history of vim
+modes
+moving, visual mode, replacing
+q/a/cats
+git - a brief history
+git - a conceptual overview
+set up github accounts
+git basics: clone, commit, branch, merge
+q/a/cats
+optional: more advanced git commands
+extra git resources
+CLI part deux: discover, grep, ssh, and other sysadmin-y tools
+q/a/cats
+extra CLI resources
+vim part deux: diff, folds, selecting chunks (cit)
+q/a/cats
+extra vim resources
+on the importance of practice
+cat slide show
