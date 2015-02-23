@@ -1,0 +1,20 @@
+type `:set number` if yu cannot see line numbers
+type `l` 6 times, so the cursor is under the I in MISTAH
+type `x` 5 times to remove ISTAH
+type `i` to enter insert mode
+type `R.`
+hit escape
+type `$` to go to the end of the line
+type `h` 2 times so the cursor is under the R in Schroedingr
+type `i` to enter insert mode
+type `E`
+~~~the first line should now read:
+DEAR MR, SCHROEDINGER,  ~~~~
+
+
+
+
+
+hit escape
+type `:%s/TEH/THE/g`
+
