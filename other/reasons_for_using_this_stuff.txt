@@ -1,0 +1,18 @@
+CLI:
+more powerful than GUI at complicated things
+yeah, clicking folders and using finder is great for doing the work that most people do. But when you want to level up and make broad changes, command line enables you to talk more directly to the computer and avoid all the extra code that exists in a GUI.
+
+examples of CLI power-modes:
+using a bash command to rename all of the files in a directory
+
+
+VIM:
+pretty standard across all *nix distributions. While you can install other editors, knowing the very basics of vim will make it easier for you to make quick edits to system files.
+to be clear: if you are just learning a language, vim *should not be your first text editor*. Your focus should be on learning the concepts, syntax, and how to google the $#!+ out of your chosen language. You can try textwrangler (mac), notepad (windows), gedit & others (*nix). I personally loved Sublime Text2 (nag ware).
+What if you've already settled on Emacs? Cool. I'm not gonna fight you. You will have already figured out how to install and get around, and you have likely arlready configured your system to default to Emacs. Luckily, the first vim section is pretty short and the second vim section is at the end.
+
+examples of VIM power modes:
+...editing .vimrc?
+
+GIT:
+git and github (and other version control systems) allow you to keep records of what you've worked on. Git is particularly good at allowing simultaneous collaboration.

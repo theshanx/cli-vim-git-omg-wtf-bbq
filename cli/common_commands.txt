@@ -1,0 +1,14 @@
+pwd		present working directory	your current directory
+cd		change directory	takes you to /home
+cd other/directory			takes you through the other directory into the directory directory
+cd ..					takes you "up" one directory, e.g., if you were in the directory directory, it would take you to other directory
+ls		list			shows you the files and directories in your current directory
+cat text.txt	catenate text.txt	displays the content of text.txt (start at the bottom)
+less text.txt	display text.txt	displays the content of text.txt (start at the top)
+mkdir new_directory	make directory named new_directory
+rmdir new_directory	remove new_directory
+touch text.txt				create file called text.txt
+rm text.txt		remove text.txt
+cp text.txt new_text.txt		make a copy of text.txt called new_text.txt, leaving the original alone
+mv text.txt directory/new_text.txt	move the text.txt. file to the directpry directory and rename it new_text.txt, so that the original is no longer where it was (you can also treat this as "rename" if you do not move it to a new directory)
+	
