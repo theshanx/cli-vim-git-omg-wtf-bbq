@@ -1,0 +1,40 @@
+" number lines
+set number
+
+" allow color highlighting
+syntax on
+
+" use the filetype for syntax highlighting
+filetype plugin indent on
+
+" let's also higlight what we are searching for
+set hlsearch
+
+" let's highlight matches as we are typing
+set incsearch
+
+" by default, vim only stores 20 commands in memory
+set history=1000
+
+" first, ignore cases when I'm searching. then, pay attention to cases only if my search contains a capital letter
+set ignorecase
+set smartcase
+
+" number of spaces in tab when editing
+set softtabstop=4
+
+" show the matching bracket ({[]})
+set showmatch
+
+" folding!
+set foldenable
+  
+" map CTRL-E to end-of-line (insert mode)
+inoremap <C-e> <esc>$i<right>
+" map CTRL-A to beginning-of-line (insert mode)
+inoremap <C-a> <esc>0i
+
+" map kj to escape key (insertmode)
+inoremap kj <esc>
+
+
