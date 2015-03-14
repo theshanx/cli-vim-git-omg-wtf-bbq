@@ -1,0 +1,154 @@
+# Thank you so much for volunteering to proof read this letter from his fluffiness, The Duke Archibald Faraday McFloppenstein, the First, Tripper of Feet. 
+
+# From command line, please navigate to the directory with his letter.
+vim LetterFromCat
+3l # cursor should be under r
+i # insert mode
+delete and re-type the first 3 letters so the word is "Dear"
+escape # command mode
+4l # cusor suold be under i
+i # insert mode
+delete b and type B so the word is "Bipeds"
+escape # command mode
+$ # cursor should be under s
+i # insert mode
+right arrow and add , to the end of the line
+escape # command mode
+:3 # cursor should be at A on line 3 (type :set number and enter to show line numbers)
+w # cursor should be under u
+i # insert mode
+type yo # word should now be "you"
+right arrow twice and type k
+right arrow twice and type w # word should now be "know"
+escape # command mode
+4w # this is 4 and not 3 because vim interprets special characters like the comma to be words
+l # cursor under e
+2dl # delete 2 characters right
+i # insert mode
+type he # word should now be "the"
+escape # command mode
+$h # got to end of line and left one character - cursor should be under z
+rs # replace the character the cursor is under with s. Word should now be "felines"
+l # move left one character
+x # cut a
+ry # replace h with y. First word should now be "My"
+
+# Huh, there's another "teh"-- wait, like, 3 "teh"s in one line! Let's fix all of those.
+:%s/teh/the/gc # replace all teh's with the's and check, just to make sure we aren't replacing a egitimate use of teh.
+y nine times # approve each replacement. Turns out there aren't a lot of teh words. Cursor should now be inder i on line 25
+~ # switch the case. Word should now be "I"
+3e # move forward 3 words and go to the end of the word. Cursor should be under last h
+i # insert mode
+arrow right, type est
+escape # command mode
+w # forward one word
+ro # replace with o. Word should now be "of"
+5l # move 5 right
+i # insert mode
+type gh # word should now be "highly"
+escape # command mode
+
+# Looks like The Duke consistently spelled "you" with one letter. 
+:%s/u/you/gc # The cursor went to the first u in the file (on line 3). 
+n if u is used correctly, y to replace u with you
+# you should end on line 35
+3k # go up 3 lines. Cursor should be under y (line 31)
+~ # capitalize y. Word should now be "You"
+w # move right a word
+i # insert mode
+a right arrow e # word should now be "are"
+escape # command mode
+f. # find the . in the sentence
+i # insert mode
+type e # word should now be "welcome"
+escape # command mode
+2k # move up two lines (line 27)
+
+
+# This seems a bit harsh. Perhaps we can re-work the message after "sweater"
+5w # move somewhere inside the parentheses
+ci( # delete everything inside the parentheses and go into insert mode
+type which I have generously covered with my silky fur # Ah, that's a much nicer aside!
+escape # command mode
+
+# Unless referring to cake, we should avoid the word moist. Because I said so.
+fm # move to the next m in the sentence
+daw # delete around the word. There should no longer be a "moist"
+2k # move up 2 lines (line 27). cursor should be under z
+rs # replace with s. Word should now be claws
+
+# Whoa! Let's not insult any mules, here.
+F, # find the previous , in the sentence
+d6b # delete 6 words backwards
+6e # move foreward 6 words and to the end of that word
+2h # move left 2 letters
+xp # reverse the order of the next two characters (a nice cut & paste trick!) Word should now be matters
+2w # move forward 2 words
+dh # delete character to the left
+2e # move to end of 2 words
+dh # delete character to the left
+ry # replace current character with y. Words should now be "my"
+2k # up 2 lines (line 25)
+Fu # go back to the next u
+ro # replace with o. Word should now be "of"
+2k # up 2 lines (line 23)
+2l # move 2 characters right
+rs # replace with s. Word should now be "services"
+Ft # go back to the next t
+i # insert mode
+type a space # Words should now be "on time"
+escape # command mode
+0 # move to begining of line
+~ # capitalize i
+:21 # move to line 21
+~ # capitalize i
+fu # go to the next u
+ro # replace with o
+$ # move to end of line
+dh # delete character to the right. Word should now be "attention"
+
+# You know, I think we can make line 17 more powerful with some repetition. 
+:17 # move to line 17
+yy # yank (copy) the line
+P # paste in front of cursor
+o # add line below cursor and go into insert mode
+type I ask you # ooh, dramatic!
+escape # command mode
+
+:15 # move to line 15
+f4 # go to the next 4
+i # insert mode
+arrow right, type space and AM # time should now show "4 AM"
+escape # command mode
+fr # move to next r
+x # remove r
+lre # move right and replace with e. Word should now be "discovered"
+fa # move to a
+xry # cut a and repace h with y. Word should now be "my"
+2ex # move 2 words forward to the end of that word and cut the last character. Word should now be "horror"
+
+# It's become obvious that "mah" is a regular misspelling for my. Let's just fix all of that.
+:%s/mah/my/gc # replace all mahs with mys
+y # yes, replace them. You should now be back at line 15.
+$Ff # go to the end of the line and back to the closest f
+i # insert mode
+type l # Word should now be "half"
+escape # command mode
+:13 # move to line 13
+ex # move to the end of the word and remove the last character
+ft # move to the next t
+i # insert mode
+type gh, right arrow twice and delete the e # word should now be "night"
+escape # command mode
+f2 # move forward to the next 2
+x # cut the 2
+i # insert mode
+type to # word should ow bw "to"
+escape # command mode
+fu; # move to next u and then the u after that
+ro # replace with o. Word should now be "for"
+:s/90/ninety # replace the upcoming 90 with ninety. Note the lack of % prevents the replace from covering the whole file, and the lack of a g at the end prevents it from replacing any other 90's that may have been in the sentence.
+
+# Are you still following along? That is amazing! High five! I am betting that by this point, however, you are ready to finish the rest on your own, no matter what you may think. 
+
+# You've probably found a couple of commands that you think rock. That's because they do! You should use the ones you like to finish editing the rest of The Duke's letter. 

@@ -1,2 +1,6 @@
-vim-adventures.com
+from command line, type `vimtutor`
+google “best vimrc configuration”
 
+http://vim-adventures.com/
+http://vim.wikia.com/
+http://www.vimgolf.com/ 
